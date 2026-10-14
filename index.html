@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- REPLACE: site title + description once you settle on your name/brand -->
+  <title>Your Name — Website Designer &amp; Developer</title>
+  <meta name="description" content="I design and build websites that help businesses showcase their work, present their services, and connect with their customers.">
+
+  <!-- Simple monogram-dot favicon (inline SVG, no file needed). Replace later if you like. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211D19'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23B8491F'/%3E%3C/svg%3E">
+
+  <!-- Fonts: Fraunces (headings) + Inter (body). display=swap avoids invisible text. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Adds a 'js' class so CSS can offer an enhanced collapsible menu only when JS runs.
+       Without JS, the full nav simply stays visible. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <!-- REPLACE: your name -->
+        <span>Your Name</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="#top" aria-current="page">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#beyond">Beyond the Screen</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="kicker">Freelance website designer &amp; developer</p>
+          <!-- REPLACE: "Your Name" with your actual name -->
+          <h1 id="hero-heading">Hey, I&rsquo;m <span class="accent">Your&nbsp;Name</span>. I build websites for businesses.</h1>
+          <p class="lede">I design and build websites that help businesses showcase their work, present their services, and connect with their customers.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">View my work</a>
+            <a class="button button-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <figure class="hero-portrait">
+          <!-- REPLACE: to use your real portrait —
+               1. Save your photo as  assets/images/portrait.jpg  (about 800×1000 px)
+               2. Delete the .portrait-placeholder div below and add:
+               <img src="assets/images/portrait.jpg" alt="Portrait of Your Name" width="800" height="1000">
+          -->
+          <div class="portrait-placeholder" role="img" aria-label="Placeholder for a portrait photograph of the site owner">
+            <span>Your portrait goes here</span>
+            <small>assets/images/portrait.jpg</small>
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ================= SHORT PERSONAL INTRO (About preview) ================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container narrow">
+        <p class="kicker">A quick hello</p>
+        <h2 id="about-heading">The person behind the websites</h2>
+        <!-- REPLACE: personalise this wording whenever you like. No invented bio below —
+             it only says what's true: there's one real person doing the work. -->
+        <p>When you work with me, you&rsquo;re not dealing with an agency or a faceless team — you&rsquo;re talking directly to the person who designs and builds your website. I care about the details, I like things to feel honest and well-made, and I want your website to genuinely work for your business.</p>
+        <p>I&rsquo;ll share more of my story here soon. For now — I&rsquo;m glad you&rsquo;re here.</p>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="section section-alt" id="work" aria-labelledby="work-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="kicker">Selected work</p>
+          <h2 id="work-heading">Websites I&rsquo;ve been working on</h2>
+          <p>These first cards are <strong>concept projects</strong> — design studies showing the kind of websites I build for small businesses. As real client projects are completed, they&rsquo;ll live here.</p>
+        </div>
+
+        <ul class="work-grid">
+
+          <!-- CARD 1 -->
+          <li>
+            <article class="work-card">
+              <!-- REPLACE: swap this placeholder for a real screenshot:
+                   <img src="assets/images/work-bakery.jpg" alt="Screenshot of the bakery website homepage" width="1200" height="750" loading="lazy"> -->
+              <div class="work-thumb" role="img" aria-label="Placeholder for the bakery website concept screenshot">
+                <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="thumb-body">
+                  <span>Screenshot placeholder</span>
+                  <small>1200 × 750 px</small>
+                </div>
+              </div>
+              <div class="work-body">
+                <div class="work-meta"><span class="badge">Concept project</span> Bakery &amp; cakes</div>
+                <h3>Bakery Website — Concept</h3>
+                <p>A warm one-page site for a bakery or cake business: menu, custom-order enquiries, and contact details front and centre.</p>
+                <!-- To add a live demo later, replace the div below with:
+                     <a class="demo-link" href="https://your-demo-url.com">View live demo &rarr;</a> -->
+                <div class="demo-slot">Live demo — coming soon</div>
+              </div>
+            </article>
+          </li>
+
+          <!-- CARD 2 -->
+          <li>
+            <article class="work-card">
+              <div class="work-thumb" role="img" aria-label="Placeholder for the fashion portfolio concept screenshot">
+                <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="thumb-body">
+                  <span>Screenshot placeholder</span>
+                  <small>1200 × 750 px</small>
+                </div>
+              </div>
+              <div class="work-body">
+                <div class="work-meta"><span class="badge">Concept project</span> Fashion &amp; design</div>
+                <h3>Fashion Portfolio — Concept</h3>
+                <p>A clean, image-led portfolio for a fashion designer to present collections and take booking enquiries.</p>
+                <div class="demo-slot">Live demo — coming soon</div>
+              </div>
+            </article>
+          </li>
+
+          <!-- CARD 3 -->
+          <li>
+            <article class="work-card">
+              <div class="work-thumb" role="img" aria-label="Placeholder for the restaurant website concept screenshot">
+                <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="thumb-body">
+                  <span>Screenshot placeholder</span>
+                  <small>1200 × 750 px</small>
+                </div>
+              </div>
+              <div class="work-body">
+                <div class="work-meta"><span class="badge">Concept project</span> Restaurant &amp; café</div>
+                <h3>Restaurant Website — Concept</h3>
+                <p>A mobile-friendly site with menu, opening hours, and directions — built for hungry people on phones.</p>
+                <div class="demo-slot">Live demo — coming soon</div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= BEYOND THE SCREEN ================= -->
+    <section class="section" id="beyond" aria-labelledby="beyond-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Beyond the screen</p>
+          <h2 id="beyond-heading">Life away from the keyboard</h2>
+          <!-- Only experiences you actually supplied are mentioned. Add your own photos/videos later. -->
+          <p>Websites are only part of the story. Outside of web work, I&rsquo;ve done things like serving drinks and smoothies at events — and this corner of the site will grow into a small collection of real photos and videos from experiences like that. Check back soon.</p>
+        </div>
+
+        <ul class="beyond-grid">
+          <!-- REPLACE: each tile with a real photo or video when ready.
+               For photos: <img src="assets/images/beyond-1.jpg" alt="Describe the moment" width="800" height="600" loading="lazy">
+               For videos later: <video controls preload="none" poster="..."> so nothing heavy loads on page load. -->
+          <li class="beyond-tile" role="img" aria-label="Placeholder for an event photograph">
+            <span aria-hidden="true">📷</span>
+            <span>Event photo — coming soon</span>
+          </li>
+          <li class="beyond-tile" role="img" aria-label="Placeholder for an event photograph">
+            <span aria-hidden="true">📷</span>
+            <span>Event photo — coming soon</span>
+          </li>
+          <li class="beyond-tile" role="img" aria-label="Placeholder for an event video">
+            <span aria-hidden="true">▶</span>
+            <span>Event video — coming soon</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+          <p class="kicker">Contact</p>
+          <h2 id="contact-heading">Have a project in mind?</h2>
+          <p>Whether you run a bakery, a fashion label, a restaurant, or any other small business — if you need a website that feels like you, I&rsquo;d love to hear about it. The easiest ways to reach me:</p>
+
+          <div class="contact-actions">
+            <!-- REPLACE: 000000000000 with your real WhatsApp number (country code + number, digits only) -->
+            <a class="button button-primary" href="https://wa.me/000000000000">Chat on WhatsApp</a>
+            <!-- REPLACE: your real email address (twice: in the href and in the visible text) -->
+            <a class="button button-ghost" href="mailto:your-email@example.com">your-email@example.com</a>
+          </div>
+
+          <p class="contact-note">Or find me elsewhere:</p>
+          <!-- REPLACE: each href="#" with your real profile URL, or delete rows you don't use -->
+          <ul class="social-row">
+            <li><a href="#" aria-label="Instagram — placeholder link, add your profile URL">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn — placeholder link, add your profile URL">LinkedIn</a></li>
+            <li><a href="#" aria-label="X, formerly Twitter — placeholder link, add your profile URL">X</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- REPLACE: your name -->
+      <p>&copy; <span id="year">2026</span> Your Name — designed &amp; built by hand.</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

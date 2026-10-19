@@ -152,10 +152,12 @@
         <div class="section-head">
           <p class="kicker">Beyond the screen</p>
           <h2 id="beyond-heading">Life away from the keyboard</h2>
-          <p>Websites are only part of the story. Outside of web work, I&rsquo;ve done things like serving drinks and smoothies at events — and this corner of the site will grow into a small collection of real photos and videos from experiences like that. Check back soon.</p>
+          <p>Websites are only part of the story. Outside of web work, I&rsquo;ve done things like serving drinks and smoothies at events — and this corner of the site is growing into a small collection of real photos and videos from experiences like that.</p>
         </div>
 
         <ul class="beyond-grid">
+          <!-- Photos: replace each photo tile the same way when you have real shots —
+               <img src="assets/images/beyond-1.jpg" alt="Describe the moment" style="display:block; width:100%; height:100%; object-fit:cover;"> -->
           <li class="beyond-tile" role="img" aria-label="Placeholder for an event photograph">
             <span aria-hidden="true">📷</span>
             <span>Event photo — coming soon</span>
@@ -164,9 +166,11 @@
             <span aria-hidden="true">📷</span>
             <span>Event photo — coming soon</span>
           </li>
-          <li class="beyond-tile" role="img" aria-label="Placeholder for an event video">
-            <span aria-hidden="true">▶</span>
-            <span>Event video — coming soon</span>
+          <li class="beyond-tile" style="padding:0; overflow:hidden;">
+            <video controls preload="metadata" playsinline style="display:block; width:100%; height:100%; object-fit:cover;">
+              <source src="assets/images/event-1.mp4" type="video/mp4">
+              Sorry — your browser can’t play this video.
+            </video>
           </li>
         </ul>
       </div>
